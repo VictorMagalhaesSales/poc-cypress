@@ -9,14 +9,10 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+        <input className='App-input' type="text" placeholder="Type something..." />
+        <button className="App-link">
           Learn React
-        </a>
+        </button>
       </header>
     </div>
   );

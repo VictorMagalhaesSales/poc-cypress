@@ -25,7 +25,20 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  background-color: #15b4e0;
+  border: none;
+  width: 300px;
+}
+
+.App-input {
+  width: 300px;
+  padding: 15px;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
 }
 
 @keyframes App-logo-spin {
