@@ -2,6 +2,14 @@
   "name": "poc-cypress",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "cy:open": "cypress open",
+    "cy:headless": "cypress run --browser electron"
+  },
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
     "@testing-library/jest-dom": "^6.6.3",
@@ -13,14 +21,6 @@
     "react-dom": "^19.1.0",
     "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
-  },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "cy:open": "cypress open",
-    "cy:headless": "cypress run --browser electron"
   },
   "eslintConfig": {
     "extends": [
@@ -41,6 +41,7 @@
     ]
   },
   "cypress-cucumber-preprocessor": {
-    "nonGlobalStepDefinitions": true
+    "nonGlobalStepDefinitions": true,
+    "stepDefinitions": "cypress/features/step_definitions"
   }
 }
